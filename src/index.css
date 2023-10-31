@@ -1,0 +1,23 @@
+:root {
+  font-family: sans-serif, system-ui;
+  --TextField-brandBorderColor: #E0E3E7,
+  color-scheme: light dark;
+  color: #ffffffde;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  background: #141414de;
+  margin: 0px;
+  padding: 0px;
+}
