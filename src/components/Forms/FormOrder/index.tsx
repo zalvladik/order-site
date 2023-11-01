@@ -21,6 +21,7 @@ const FormOrder = (): JSX.Element => {
 
   const submitData = async (e: any) => {
     e.preventDefault();
+
     const { elements } = e.currentTarget;
 
     const data: UserFormData = {
@@ -36,9 +37,7 @@ const FormOrder = (): JSX.Element => {
       return;
     }
 
-    const post = await postUserOrder(data);
-
-    console.log(post);
+    await postUserOrder(data);
   };
 
   return (

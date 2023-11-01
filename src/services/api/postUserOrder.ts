@@ -1,14 +1,44 @@
-import type { UserFormData } from "../../components/Forms/FormOrder/types";
+import { toast } from "react-toastify";
 
+import type { UserFormData } from "../../components/Forms/FormOrder/types";
 import { api } from "../../configs/ky";
 import { FetchEndpoint } from "../../constants";
 
 const postUserOrder = async (data: UserFormData) => {
-  return api
-    .post(FetchEndpoint.TELEGRAM, {
+  try {
+    const response = await api.post(FetchEndpoint.TELEGRAM, {
       json: data,
-    })
-    .json();
+    });
+
+    toast.success("Успішне замовлення!", {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+    });
+
+    return await response.json();
+  } catch (error) {
+    toast.error(
+      `Виникла помилка з відправленням замовлення, будь ласка попробуйте ще раз`,
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      }
+    );
+
+    throw error;
+  }
 };
 
 export default postUserOrder;

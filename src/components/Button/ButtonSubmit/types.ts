@@ -4,7 +4,7 @@ export type ButtonStyledProps = {
   bgcolor?: string;
 };
 
-export type ButtonProps = {
+export type StyledButtonProps = {
   hrefid?: string;
   bgcolor?: string;
   sx?: CSSProperties;

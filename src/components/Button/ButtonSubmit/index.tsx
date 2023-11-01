@@ -1,7 +1,7 @@
 import { ButtonStyled } from "./styles";
-import { ButtonProps } from "./types";
+import { StyledButtonProps } from "./types";
 
-const Button = ({ bgcolor, sx, children }: ButtonProps): JSX.Element => {
+const Button = ({ bgcolor, sx, children }: StyledButtonProps): JSX.Element => {
   return (
     <ButtonStyled
       variant="contained"
