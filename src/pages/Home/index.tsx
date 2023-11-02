@@ -1,15 +1,15 @@
-import FormOrder from "../../components/Forms/FormOrder";
-import ContainerPhoto from "../../components/ContainerPhoto";
-import Header from "../../components/Header";
-import TextList from "../../components/TextList/Index";
-import ContainerVideo from "../../components/ContainerVideo";
-import PromouteContainer from "../../components/PromouteContainer";
-import ContainerBox from "../../components/ContainerBox";
-import Title from "../../components/Title";
-import SwiperPhotos from "../../components/SwiperPhotos";
+import FormOrder from "src/components/Forms/FormOrder";
+import ContainerPhoto from "src/components/ContainerPhoto";
+import Header from "src/components/Header";
+import TextList from "src/components/TextList/Index";
+import ContainerVideo from "src/components/ContainerVideo";
+import PromouteContainer from "src/components/PromouteContainer";
+import ContainerBox from "src/components/ContainerBox";
+import Title from "src/components/Title";
+import SwiperPhotos from "src/components/SwiperPhotos";
 
-import { photoParams, photoConsumerReviews } from "../../constants";
-import { positiveRisons, params } from "../../constants";
+import { photoParams, photoConsumerReviews } from "src/constants";
+import { positiveRisons, params } from "src/constants";
 import { ContainerHome } from "./styles";
 
 const Home = () => {

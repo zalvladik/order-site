@@ -1,4 +1,4 @@
-import ContainerBox from "../ContainerBox";
+import ContainerBox from "src/components/ContainerBox";
 import ReactPlayer from "react-player";
 
 const ContainerVideo = (): JSX.Element => {

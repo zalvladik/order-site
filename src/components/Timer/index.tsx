@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import Title from "../Title";
+import Title from "src/components/Title";
 import {
   TimerContainer,
   TimerValueContainer,

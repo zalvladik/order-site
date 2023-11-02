@@ -1,5 +1,5 @@
-import Button from "../Button/ButtonClick";
-import CountdownTimer from "../../components/Timer";
+import Button from "src/components/Button/ButtonClick";
+import CountdownTimer from "src/components/Timer";
 import {
   PromouteContainerBox,
   PromoutePriceTypography,

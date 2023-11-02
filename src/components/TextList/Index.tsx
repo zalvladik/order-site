@@ -1,6 +1,6 @@
 import DoneOutlineIcon from "@mui/icons-material/DoneOutline";
 
-import ContainerBox from "../ContainerBox";
+import ContainerBox from "src/components/ContainerBox";
 import { ListUl, ListItemLi, TextListText } from "./styles";
 import { TextListProps } from "./types";
 

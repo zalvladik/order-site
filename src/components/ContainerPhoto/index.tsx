@@ -1,6 +1,6 @@
 import { Typography } from "@mui/material";
 
-import ContainerBox from "../ContainerBox";
+import ContainerBox from "src/components/ContainerBox";
 import { Photo, PhotoCard, CardText } from "./styles";
 import { ContainerPhotoProps } from "./types";
 

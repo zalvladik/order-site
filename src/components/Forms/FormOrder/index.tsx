@@ -1,19 +1,19 @@
 import { ThemeProvider, useTheme } from "@mui/material/styles";
 
 import validateData from "./validationSchema";
-import InputFirstName from "../../Inputs/InputFirstName";
-import InputLastName from "../../Inputs/InputLastName";
-import InputNumberPhone from "../../Inputs/InputNumberPhone";
-import InputRadioColor from "../../Inputs/InputRadioColor";
-import InputQuantity from "../../Inputs/InputQuantity";
-import InputInstagram from "../../Inputs/InputInstagram";
-import ContainerBox from "../../ContainerBox";
-import Title from "../../Title";
-import Button from "../../Button/ButtonSubmit";
+import InputFirstName from "src/components/Inputs/InputFirstName";
+import InputLastName from "src/components/Inputs/InputLastName";
+import InputNumberPhone from "src/components/Inputs/InputNumberPhone";
+import InputRadioColor from "src/components/Inputs/InputRadioColor";
+import InputQuantity from "src/components/Inputs/InputQuantity";
+import InputInstagram from "src/components/Inputs/InputInstagram";
+import ContainerBox from "src/components/ContainerBox";
+import Title from "src/components/Title";
+import Button from "src/components/Button/ButtonSubmit";
 
 import { UserFormData } from "./types";
 import { FormUser, FormItem } from "./styles";
-import postUserOrder from "../../../services/api/postUserOrder";
+import postUserOrder from "src/services/api/postUserOrder";
 import customTheme from "./config";
 
 const FormOrder = (): JSX.Element => {

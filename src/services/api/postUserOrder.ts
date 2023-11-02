@@ -1,8 +1,8 @@
 import { toast } from "react-toastify";
 
-import type { UserFormData } from "../../components/Forms/FormOrder/types";
-import { api } from "../../configs/ky";
-import { FetchEndpoint } from "../../constants";
+import type { UserFormData } from "src/components/Forms/FormOrder/types";
+import { api } from "src/configs/ky";
+import { FetchEndpoint } from "src/constants";
 
 const postUserOrder = async (data: UserFormData) => {
   try {
